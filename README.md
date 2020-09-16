@@ -4,6 +4,7 @@ Alcher5 Infra repository
 Homework №5
 
 bastion_IP = 178.154.224.229
+
 someinternalhost_IP = 10.130.0.16
 
 Проверено сквозное подключение с Bastion host к серверу по внтуреннему адресу с помощью SSH Agent Forwarding (опция -A):
