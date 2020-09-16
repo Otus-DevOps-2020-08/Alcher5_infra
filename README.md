@@ -31,5 +31,5 @@ Host someinternalhost
     ForwardAgent yes
     ProxyJump bastion
 
-После вход осуществляется командой:
+После правки конфига, вход осуществляется командой:
 ssh someinternalhost
