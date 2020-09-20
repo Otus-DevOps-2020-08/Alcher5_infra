@@ -39,7 +39,6 @@ write_files:
       cd /home/yc-user/reddit
       bundle install
       puma -d
-
 runcmd:
   - /tmp/install_mongodb.sh
   - sudo -u yc-user /tmp/deploy.sh
