@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install apt https transport and ca-certs
-sudo apt-get install -y apt-transport-https ca-certificates
+sudo apt-get install -y apt-transport-https libcurl3-gnutls ca-certificates
 
 # Get repository key
 wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
