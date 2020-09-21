@@ -29,7 +29,6 @@ write_files:
       sudo apt-get install -y mongodb-org
       sudo systemctl start mongod
       sudo systemctl enable mongod
-
   - path: /tmp/deploy.sh
     permissions: "0755"
     content: |
