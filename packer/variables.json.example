@@ -1,0 +1,5 @@
+{
+    "user_service_account_key_file": "./fake_key.json",
+    "user_folder_id": "11111111111111111120",
+    "source_image": "ubuntu-1604-lts"
+}
