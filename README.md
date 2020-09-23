@@ -6,12 +6,11 @@ Alcher5 Infra repository
 
 - Создана ветка **packer-base** в репозитории;
 
-- Скрипты с прошлого ДЗ перенесены в **config-scripts**;
+- Скрипты с прошлого ДЗ перенесены в папку **config-scripts**;
 
 - Установлен **Packer**;
 
-- Создан сервисный аккаунт **packeruser**, делегированы права,
-создан и экспортирован **account-key**;
+- Создан сервисный аккаунт **packeruser**, делегированы права, создан и экспортирован **account-key**;
 
 - Создан шаблон **ubuntu16.json** для **packer**;
 
@@ -21,9 +20,11 @@ Alcher5 Infra repository
 
 - Исправлена ошибка, из-за которой сборка образа завершалась на:
 
+
 ```
 Build 'yandex' errored: Failed to find instance ip address: instance has no one IPv4 external address.
 ```
+
 - Создана ВМ на основе собранного образа;
 
 - Установлено и проверено приложение **reddit**;
@@ -35,9 +36,9 @@ Build 'yandex' errored: Failed to find instance ip address: instance has no one 
 - Добавлены дополнительные опции:
 `zone`, `preemptible`;
 
-( Создан **bake** образ, с установленным приложением **reddit**; )
+Создан **bake** образ, с установленным приложением **reddit**;
 
-( Создан скрипт `create-reddit-vm.sh` для создания машины с помощью cli; )
+Создан скрипт `create-reddit-vm.sh` для создания машины с помощью Yandex.Cloud CLI ;
 
 ## Домашнее задание к лекции №6
 
