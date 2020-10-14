@@ -9,6 +9,14 @@ variable zone {
   # Значение по умолчанию
   default = "ru-central1-a"
 }
+variable instance_zone {
+  description = "Zone for compute instance"
+  default     = "ru-central1-a"
+}
+variable instances_count {
+  description = "Instances work under load balancer"
+  default     = 1
+}
 variable public_key_path {
   # Описание переменной
   description = "Path to the public key used for ssh access"
