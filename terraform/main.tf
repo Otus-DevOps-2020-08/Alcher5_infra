@@ -1,3 +1,7 @@
+# Описание count.index и self.<object>
+# https://www.terraform.io/docs/configuration/resources.html#the-count-object
+# https://www.terraform.io/docs/configuration/resources.html#referring-to-instances
+
 provider "yandex" {
   service_account_key_file = "terraform-key.json.example"
   cloud_id                 = var.cloud_id
@@ -8,7 +12,7 @@ provider "yandex" {
 resource "yandex_compute_instance" "app" {
 
   count = var.instances_count
-  name  = "reddit-app-${count.index}"
+  name  = "reddit-app-${count.index}"   # описание в начале
   zone  = var.instance_zone
 
 
@@ -36,7 +40,7 @@ resource "yandex_compute_instance" "app" {
 
   connection {
     type  = "ssh"
-    host  = yandex_compute_instance.app.network_interface.0.nat_ip_address
+    host  = self.network_interface.0.nat_ip_address    # описание в начале
     user  = "ubuntu"
     agent = false
     # путь до приватного ключа
