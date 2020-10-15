@@ -3,7 +3,7 @@
 # https://www.terraform.io/docs/configuration/resources.html#referring-to-instances
 
 provider "yandex" {
-  service_account_key_file = "terraform-key.json" # terraform-key.json.example
+  service_account_key_file = "terraform-key.json.example" # terraform-key.json.example
   cloud_id                 = var.cloud_id
   folder_id                = var.folder_id
   zone                     = var.zone
