@@ -6,7 +6,7 @@ variable folder_id {
 }
 variable zone {
   description = "Zone"
-  default = "ru-central1-a"
+  default     = "ru-central1-a"
 }
 variable instance_zone {
   description = "Zone for compute instance"
@@ -29,5 +29,5 @@ variable subnet_id {
   description = "Subnet"
 }
 variable service_account_key_file {
-  description = "terraform-key.json.example"
+  description = "Path to service account key file"
 }
