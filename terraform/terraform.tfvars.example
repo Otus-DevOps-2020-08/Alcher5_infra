@@ -5,5 +5,5 @@ image_id                 = "33333333333333333333"
 public_key_path          = "~/.ssh/yc.pub"
 private_key_path         = "~/.ssh/yc"
 subnet_id                = "44444444444444444444"
-service_account_key_file = "terraform-key.json"
+service_account_key_file = "terraform-key.json.example"
 instances_count          = 2
