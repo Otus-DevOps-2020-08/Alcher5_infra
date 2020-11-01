@@ -1,6 +1,18 @@
 # Alcher5_infra
 Alcher5 Infra repository
 
+## Домашнее задание к лекции №9
+
+### Выполненные действия
+
+- Создан образ с приложением: `packer build -var-file="./packer/variables.json" ./packer/app.json`
+
+- Создан образа с базой данных: `packer build -var-file="./packer/variables.json" ./packer/db.json`
+
+- Созданы terraform модули: **app, db, vpc**
+
+- Созданы окружения: **prod, stage**
+
 ## Домашнее задание к лекции №8
 
 ### Выполненные действия
