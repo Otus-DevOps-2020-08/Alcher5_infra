@@ -13,6 +13,10 @@ Alcher5 Infra repository
 
 - Созданы окружения: **prod, stage**
 
+- Добавлено использование внешнего backend ;
+
+- Добавлен deploy приложения: `modules/db/files` `modules/app/files`
+
 ## Домашнее задание к лекции №8
 
 ### Выполненные действия
