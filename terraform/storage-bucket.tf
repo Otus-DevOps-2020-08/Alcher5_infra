@@ -6,7 +6,7 @@ provider "yandex" {
   zone                     = var.zone
 }
 
-resource "yandex_storage_bucket" "terraform-backet-alcher5" {
+resource "yandex_storage_bucket" "terraform-bucket-alcher5" {
   bucket        = var.bucket_name
   access_key    = var.access_key
   secret_key    = var.secret_key
