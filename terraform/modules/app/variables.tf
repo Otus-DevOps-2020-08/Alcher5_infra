@@ -8,3 +8,15 @@ variable app_disk_image {
 variable subnet_id {
 description = "Subnets for modules"
 }
+
+variable db_ip {
+  description = "database IP"
+}
+
+variable provision {
+  description = "using provision"
+}
+
+variable private_key_path {
+  description = "path to private key"
+}
