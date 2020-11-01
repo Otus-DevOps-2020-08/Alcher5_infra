@@ -7,3 +7,7 @@ private_key_path         = "~/.ssh/yc"
 subnet_id                = "44444444444444444444"
 service_account_key_file = "../../../key.json"
 instances_count          = 2
+
+access_key                = "keyId"
+secret_key                = "secret"
+bucket_name               = "test"
