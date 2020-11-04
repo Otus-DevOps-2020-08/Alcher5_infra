@@ -1,6 +1,22 @@
 # Alcher5_infra
 Alcher5 Infra repository
 
+## Домашнее задание к лекции №10
+
+### Выполненные действия
+
+- Написан ansible-playbook clone.yml и inventory файл;
+
+- На VM app была применена комманда, которая клонировала репозиторий с **github**;
+
+- Была применена команда удаления репозитория **reddit** через модуль `-m command -a 'rm -rf ~/reddit' `
+
+- и выполнен плейбук `ansible-playbook clone.yml`
+
+- в результате измения были применены к одному пункту **Clone repo** , так как `~/reddit` был удален предыдущей командой;
+
+- Добавлен `inventory.json` в динамическом формате;
+
 ## Домашнее задание к лекции №9
 
 ### Выполненные действия
@@ -9,11 +25,11 @@ Alcher5 Infra repository
 
 - Создан образа с базой данных: `packer build -var-file="./packer/variables.json" ./packer/db.json`
 
-- Созданы terraform модули: **app, db, vpc**
+- Созданы terraform модули: **app, db, vpc**;
 
-- Созданы окружения: **prod, stage**
+- Созданы окружения: **prod, stage**;
 
-- Добавлено использование внешнего backend ;
+- Добавлено использование внешнего backend;
 
 - Добавлен deploy приложения: `modules/db/files` `modules/app/files`
 
