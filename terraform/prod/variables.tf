@@ -32,13 +32,14 @@ variable service_account_key_file {
   description = "Path to service account key file"
 }
 variable app_disk_image {
-description = "Disk image for reddit app"
-default = "reddit-app-base"
+  description = "Disk image for reddit app"
+  default     = "reddit-app-base"
 }
 variable db_disk_image {
   description = "Disk image for reddit db"
-  default = "reddit-db-base"
+  default     = "reddit-db-base"
 }
+
 variable access_key {
   description = "key id"
 }
@@ -47,4 +48,9 @@ variable secret_key {
 }
 variable bucket_name {
   description = "bucket name"
+}
+
+variable provision {
+  description = "using provisioner"
+  default     = true
 }
