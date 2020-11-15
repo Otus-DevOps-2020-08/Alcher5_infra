@@ -1,5 +1,5 @@
 {
     "user_folder_id": "b1gvotp7cav1vs86ntk1",
     "user_source_image_family": "ubuntu-1604-lts",
-    "user_service_account_key_file": "../../key.json"
+    "user_service_account_key_file": "../key.json"
 }

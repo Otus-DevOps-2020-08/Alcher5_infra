@@ -10,3 +10,5 @@
 
 /terraform/key.json
 /terraform/terraform.tfstate
+
+*.retry
