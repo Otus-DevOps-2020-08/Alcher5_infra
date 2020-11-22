@@ -23,6 +23,11 @@ unzip -d ~/bin tflint.zip
 ~/bin/tflint --version
 rm tflint.zip
 
-pip install ansible==${ANSIBLE}
-pip install ansible-lint==${ANSIBLE_LINT_VERSION}
+sudo apt-get update
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+sudo python get-pip.py
+
+sudo pip install ansible==${ANSIBLE}
+
+sudo pip install ansible-lint==${ANSIBLE_LINT_VERSION}
 ansible-lint --version
