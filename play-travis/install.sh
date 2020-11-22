@@ -3,8 +3,10 @@ set -e
 
 PACKER_VERSION=1.6.2
 TERRAFORM_VERSION=0.12.8
-ANSIBLE_LINT_VERSION=3.5.0
 TFLINT_VERSION=0.20.3
+ANSIBLE=2.6
+ANSIBLE_LINT_VERSION=3.5.0
+
 
 curl -L -o packer.zip "https://releases.hashicorp.com/packer/${PACKER_VERSION}/packer_${PACKER_VERSION}_linux_amd64.zip"
 unzip -d ~/bin packer.zip
@@ -21,5 +23,6 @@ unzip -d ~/bin tflint.zip
 ~/bin/tflint --version
 rm tflint.zip
 
+pip install ansible==${ANSIBLE}
 pip install ansible-lint==${ANSIBLE_LINT_VERSION}
 ansible-lint --version
