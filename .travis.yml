@@ -2,8 +2,16 @@ dist: trusty
 sudo: required
 language: bash
 before_install:
-- curl https://raw.githubusercontent.com/express42/otus-homeworks/2020-08/run.sh |
-  bash
+- cp play-travis/key_example key_example
+- cp play-travis/key_example packer/key_example
+- curl https://raw.githubusercontent.com/express42/otus-homeworks/2020-08/run.sh | bash
+
+install:
+- bash play-travis/install.sh
+
+script:
+- bash play-travis/checks.sh
+
 notifications:
   slack:
     rooms:
