@@ -21,5 +21,5 @@ unzip -d ~/bin tflint.zip
 ~/bin/tflint --version
 rm tflint.zip
 
-pip3 install ansible-lint==${ANSIBLE_LINT_VERSION}
+pip install ansible-lint==${ANSIBLE_LINT_VERSION}
 ansible-lint --version
