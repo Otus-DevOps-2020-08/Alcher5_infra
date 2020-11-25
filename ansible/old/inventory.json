@@ -28,12 +28,12 @@ cat<<EOF
     },
     "db": {
         "hosts": [
-            "${instance[0]}"
+            "${instance[3]}"
         ]
     },
     "app": {
         "hosts": [
-            "${instance[3]}"
+            "${instance[0]}"
         ]
     }
 }

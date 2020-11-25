@@ -12,3 +12,6 @@
 /terraform/terraform.tfstate
 
 *.retry
+
+jdauphant.nginx
+vault.key
