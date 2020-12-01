@@ -15,7 +15,7 @@ Alcher5 Infra repository
 
 - Задание со **`*`**: В переменную `extra_vars` добавлены настройки для **Nginx** по проксированию приложения на 80 порту.
 
-- Установлен Pipenv. https://docs.python-guide.org/dev/virtualenvs/
+- Добавлена Melecule и тестов на testinfra
 
 
 ## Домашнее задание к лекции №12
